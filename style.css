@@ -1,0 +1,160 @@
+body {
+    overflow: hidden !important;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-repeat:repeat-x;
+    background-size: cover;
+    font-size: 16px;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 12%;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.texts {
+    width: 100%;
+    position: relative;
+    margin-top: 15% !important;
+    margin-left: 12% !important;
+}
+
+.texts h1{
+    width: 33%;
+    font-size: 380%;
+    letter-spacing: 10px;
+    font-weight: 800;
+}
+
+.texts h1 span {
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+}
+
+.texts p{
+    width: 42%;
+    padding: 2% 0;
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.email-input {
+    position: relative;
+    display: inline;
+}
+
+#email {
+    display: inline;
+    position: relative;
+    padding: 1%;
+    width: 40%;
+    outline: none;
+    border: 0.1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+button{
+    position: absolute;
+    left: 80%;
+    padding: 2.5%;
+    width: 25%;
+    border: 0.1px solid transparent;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+button:hover {
+    background: linear-gradient(150deg, hsl(0, 0%, 100%), hsl(0, 80%, 86%));
+}
+
+#errico {
+    position: absolute;
+    left: 70%;
+    bottom: -4px !important;
+    display: none;
+}
+
+.desktop-view img {
+    width: 70vw;
+    height: 98vh;
+}
+
+@media screen and (max-width: 900px) {
+    .texts h1{
+        font-size: 280%;
+    }
+
+    .texts p{
+        width: 80%;
+        padding: 2% 0;
+        color: hsl(0, 36%, 70%);
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    #email {
+        width: 80%;
+    }
+
+    button{
+        position: absolute;
+        left: 80%;
+        padding: 0.4vh;
+        width: 25%;
+    }
+
+    .desktop-view {
+        width: 100vw;
+        height: 98vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-view {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .texts {
+        margin-top: 25% !important;
+        margin-left: 0 !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .texts h1{
+        font-size: 280%;
+        margin: 5% 0;
+        width: 100%;
+    }
+
+    .texts p{
+        width: 100%;
+    }
+
+    #email {
+        width: 80%;
+        padding: 2%;
+    }
+
+    button{
+        position: absolute;
+        left: 80%;
+        padding: 2.5%;
+        width: 25%;
+    }
+}
