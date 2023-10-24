@@ -118,6 +118,11 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
+
+    body {
+        overflow: scroll !important;
+    }
+
     .mobile-view {
         display: block;
         position: relative;
